@@ -119,7 +119,7 @@ body.page-template-page-fullsingle-split {
   line-height: 33px;
   letter-spacing: -0.2px;
   color: #19222f;
-  animation: fadein 2s;
+  animation: fadein 1s;
 }
 body.page-template-page-fullsingle-split p {
   color: #19222f;
@@ -189,7 +189,7 @@ body.page-template-page-fullsingle-split p {
 .split-intro h1 {
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.4px;
   color: #19222f;
