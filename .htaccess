@@ -1,3 +1,0 @@
-# Redirect individual broken links to the homepage
-Redirect 301 /bio/ https://luciatian.com
-Redirect 301 /links/ https://luciatian.com
