@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Lucia Tian | News & Links </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+ <style>
+
+html, body {
+  height: 100%; /* Ensure both the html and body elements fill the viewport height */
+  margin: 0; /* Remove default margins */
+}
+
+body {
+  background-image: url('input/transmission_background.jpg'); /* Replace with the path to your image */
+  background-size: cover; /* Make the image cover the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed; /* Fix the background so it doesn't move when scrolling */
+
+  font-family: 'Urbanist', sans-serif; /* Set your preferred font */
+  color: #323839; /* Set the default text color */
+  line-height: 1.6; /* Improve readability with line spacing */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Urbanist', serif; /* Set a distinct font for headings */
+  margin-bottom: 10px; /* Add spacing below headings */
+}
+
+p {
+  font-size: 17px; /* Set a standard font size for paragraphs */
+  color: #444444; /* Slightly lighter text for readability */
+}
+
+a {
+  color: #007BFF; /* Set a distinct color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+a i {
+  margin-right: 3px; /* Add space between the icon and text */
+}
+
+a:hover {
+  color: #0056b3; /* Change link color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.navbar {
+  /*background-color: transparent; */
+  background-color: rgba(255, 255, 255, 0.7); /* White with 80% opacity */
+  position: sticky; /* Allow content to flow behind it */
+  z-index: 1; /* Keep the navbar above the image */
+  padding-left: 0px; /* Adjust spacing if necessary */
+}
+
+.navbar-nav .nav-link {
+  color: #323839; /* Ensure the text remains visible on a transparent background */
+  font-size: 17px; /* Set a standard font size for links */
+}
+
+.navbar-brand {
+  color: #323839; /* Ensure the brand text is visible */
+  font-size: 26pt;
+  position: relative; /* Ensure proper alignment */
+  left: 0; /* Keep aligned with the left side */
+  margin-left: 0px; /* Adjust margin to maintain consistent spacing */
+  padding-left: 15px;
+}
+
+.navbar-toggler-icon {
+  background-color: #d2e9e1af; /* Set the desired color */
+  border-radius: 2px; /* Optional: Add rounding to the corners */
+}
+
+
+.navbar-toggler:hover svg rect {
+  fill: #323839; /* Change color on hover */
+}
+
+
+.profile-container {
+    display: flex;
+    flex-direction: column; /* Stack the image and text vertically */
+    gap: 20px; /* Add spacing between the elements */
+    width: auto; /* Use full width */
+    height: 100vh; /* Take up the full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling for the block */
+    align-items: center; /* Center-align content */
+    justify-content: flex-start; /* Align content to the top */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  
+
+.text-container {
+    flex: none; /* Prevent stretching of child elements */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack text vertically */
+    justify-content: flex-start;
+    width:auto; /* Allow the text to size itself based on content */
+    max-height: none; /* Remove height restrictions */
+    overflow-y: auto; /* Enable scrolling for the text */
+    font-size: 16px; /* Slightly smaller text for narrow viewports */
+    padding-right: 20px; /* Add some padding for spacing */
+}
+
+
+.text-background {
+  background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+  padding: 20px; /* Add padding inside the background */
+  border-radius: 8px; /* Optional: Add rounded corners for aesthetics */
+  width: auto; /* Allow the box to size itself based on content */
+  display: inline-block; /* Make the box shrink to fit its content */
+  max-width: 80%; /* Limit maximum width for better readability */
+  margin: 0 auto; /* Center the text container */
+  padding: 15px; /* Reduce padding for smaller screens */
+}
+
+
+.profile-photo-container {
+  width: 250px; /* Adjust width as needed */
+  height: 250px; /* Half of the width for a perfect half-circle */
+  overflow: hidden; /* Ensures the image doesn't overflow the container */
+  position: relative;
+  /*background-color: white; /* Optional: Background color for the border area */
+  margin-left: 50px; /* Add padding on the left side of the image */
+  border: 10px solid #bfd9d2; /* Replace #34c759 with the exact green color from your background image */
+  border-radius: 50%; /* Ensure the border is circular */
+  flex-shrink: 0; /* Prevent shrinking in flex containers */
+}
+
+.profile-photo-image {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Maintain aspect ratio */
+}
+
+
+
+</style>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Lucia Tian</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <rect width="30" height="3" fill="#bfd9d2"></rect>
+        <rect y="12" width="30" height="3" fill="#bfd9d2"></rect>
+        <rect y="24" width="30" height="3" fill="#bfd9d2"></rect>
+      </svg>
+    </button>
+
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="bio.html">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News & Links</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- End of navigation bar -->
+
+<!-- Profile and Text Section -->
+<div class="profile-container">
+
+  <!-- Text Section -->
+
+  <div class="text-background">
+    <div class="text-container">
+      <h2 id="News">Recent News & Publications</h2>
+      
+      <ul>
+        <li> December 2024: My Google team shared updated clean energy procurement guidelines via an update to our paper: 
+            <a href="https://sustainability.google/reports/accelerating-advanced-clean-electricity-technologies/" target="_blank">The Corporate Role in Accelerating Advanced Clean Electricity Technologies</a>. 
+        </li>
+        <li> November 2024: You can listen to my panel on Clean Energy & AI at 
+            <a href="https://alumni.princeton.edu/stories/andlinger-center-conference-clean-energy-transition" target="_blank">Princeton Andlinger Center</a> as a podcast on 
+            <a href="https://heatmap.news/podcast/shift-key-s2-e19-ai-decarbonization" target="_blank">Heatmap/Shift Key</a>.
+        </li>
+        <li> October 2024: Our team announced a ground-breaking partnership with 
+            <a href="https://blog.google/outreach-initiatives/sustainability/google-kairos-power-nuclear-energy-agreement/" target="_blank">Kairos</a> to develop 500MW of advanced Small Modular Reactors.
+        </li>
+    </ul>
+
+    <!-- Separator -->
+    <hr style="margin: 40px 0; border: 2px solid #bfd9d2;">
+    <!-- Separator -->
+
+    <h2 id="Links">Links to Prior Work</h2>
+    <div style="margin-bottom: 20x;"></div>
+
+    <h5>U.S. Department of Energy:</h5>
+    <ul>
+        <li>
+            <a href="https://liftoff.energy.gov" target="_blank">DOE's Pathways to Commercial Liftoff</a>, first published in March 2023, captured our commercial assessment for
+             each of several critical clean energy technologies. 
+            <ul>
+              <li>
+                <a href="publications/20230320-Liftoff-Introduction-vPUB-Final.pdf" target="_blank">Introduction</a>
+              </li>
+              <li>
+                <a href="publications/20230523-Pathways-to-Commercial-Liftoff-Clean-Hydrogen.pdf" target="_blank">Clean Hydrogen</a>
+              </li>
+              <li>
+                <a href="publications/Pathways-to-Commercial-Liftoff-LDES-May-5_UPDATED.pdf" target="_blank">Long Duration Energy Storage</a>
+              </li>
+              <li>
+                <a href="publications/20230320-Liftoff-Advanced-Nuclear-vPUB-0329-Update.pdf" target="_blank">Advanced Nuclear</a> 
+                (<a href="publications/LIFTOFF_DOE_AdvNuclear-vX7.pdf" target="_blank">2024 Update</a>)
+              </li>
+              <li>
+                <a href="publications/20230424-Liftoff-Carbon-Management-vPUB_update3.pdf" target="_blank">Carbon Management</a>
+              </li>
+              <li>
+                <a href="publications/Liftoff_Innovative-Grid-Deployment_Final_5.2-1.pdf" target="_blank">Innovative Grid Deployment</a>
+              </li>
+              <li>
+                <a href="publications/LIFTOFF_DOE_NextGen_Geothermal_v14.pdf" target="_blank">Next-Gen Geothermal</a>
+              </li>
+              <li>
+                <a href="publications/April-2024-LIFTOFF_DOE_Offshore-Wind-Liftoff-2.pdf" target="_blank">Offshore Wind</a>
+              </li>
+              <li>
+                <a href="publications/LIFTOFF_DOE_VVP_10062023_v4.pdf" target="_blank">Virtual Power Plants</a>
+              </li>
+              <li>
+                <a href="publications/LIFTOFF_DOE_Industrial-Decarbonization_v8.pdf" target="_blank">Industrial Decarbonization: Overview</a>
+              </li>
+              <ul>
+              <li>
+                <a href="publications/20230921-Pathways-to-Commercial-Liftoff-Chemicals-Refining.pdf" target="_blank">Chemicals & Refining</a>
+              </li>
+              <li>
+                <a href="publications/20230921-Pathways-to-Commercial-Liftoff-Cement.pdf" target="_blank">Cement</a>
+              </li>
+            </ul>
+            </ul>
+            You can also learn more via public <a href="https://liftoff.energy.gov/webinars/" target="_blank">webinars</a>, and 
+            <a href="https://www.ctvc.co/3-2-1-doe-we-have-liftoff/" target="_blank">Climate Tech VC's coverage</a>.
+        </li>
+        <li>
+            <a href="https://www.energy.gov/technologytransitions/arl" target="_blank">DOE's Adoption Readiness Level Framework</a>, first published in February 2023 and used across DOE, National Labs, and industry, provides a systematic framework for assessing technology adoption risks in parallel with the familiar "TRL" scale. 
+            You can find the detailed assessment <a href="publications/ARL Assessment 10-10-24.pdf" target="_blank">here</a>.
+        </li>
+        <li>
+            <a href="https://www.ctvc.co/founders-guide-to-the-doe/" target="_blank">Climate Tech VC: Founder's Guide to DOE</a>. August 2022.
+        </li>
+        <li>
+            <a href="https://science.osti.gov/-/media/bes/pdf/reports/2022/Microelectronics-at-the-Department-of-Energy-May-2022.pdf" target="_blank">Microelectronics at the Department of Energy</a>. June 2022.
+        </li>
+        <li>
+            <a href="https://www.energy.gov/policy/securing-americas-clean-energy-supply-chain" target="_blank">Securing America’s Clean Energy Supply Chain</a>. February 2022.
+        </li>
+    </ul>
+
+    <h5>ACLU</h5>
+    <p>Reports:</p>
+    <ul>
+        <li>
+            <a href="https://www.aclu.org/report/racial-justice-demands-every-vote-counted" target="_blank">Count Every Vote Report</a>. Also see 
+            <a href="https://www.aclu.org/news/voting-rights/racial-justice-demands-that-every-vote-is-counted/" target="_blank">blog post</a> and 
+            <a href="https://soundcloud.com/aclu/racial-justice-demands-that-every-vote-is-counted" target="_blank">At Liberty Podcast</a>. October 2020.
+        </li>
+        <li>
+            <a href="https://www.aclu.org/covidinjails" target="_blank">COVID-19 in Jails Report</a>. Also see 
+            <a href="https://www.aclu.org/news/smart-justice/new-model-shows-reducing-jail-population-will-lower-covid-19-death-toll-for-all-of-us/" target="_blank">blog post</a>, 
+            <a href="https://fivethirtyeight.com/features/jails-are-coronavirus-hotbeds-how-many-people-should-be-released-to-slow-the-spread/" target="_blank">explainer by fivethirtyeight & The Marshall Project</a>, 
+            <a href="https://www.azcentral.com/story/opinion/op-ed/2020/05/20/early-release-arizona-prisons-matter-public-health-not-politics/5218072002/" target="_blank">Op-Ed from Aaron Horowitz</a>. April 2020.
+        </li>
+        <li>
+            <a href="https://www.aclu.org/marijuana" target="_blank">A Tale of Two Countries: Racially Targeted Arrests in the Era of Marijuana Reform</a>. See 
+            <a href="https://www.aclu.org/report/tale-two-countries-racially-targeted-arrests-era-marijuana-reform" target="_blank">research report</a> and 
+            <a href="https://graphics.aclu.org/marijuana-arrest-report/" target="_blank">data viz</a>. April 2020.
+        </li>
+    </ul>
+
+    <p>Blogs:</p>
+    <ul>
+        <li>
+            <a href="https://medium.com/aclu-tech-analytics/meet-the-aclu-analytics-team-4644d4f20dae" target="_blank">An Introduction to ACLU Analytics</a>. Updates 
+            <a href="https://medium.com/aclu-tech-analytics/aclu-analytics-in-2021-legal-advocacy-update-6a251a70b95d" target="_blank">Part 1</a> and 
+            <a href="https://medium.com/aclu-tech-analytics/aclu-analytics-in-2021-an-update-engagement-50e98b48110b" target="_blank">Part 2</a>.
+        </li>
+        <li>
+            <a href="https://nerds.aclu.org/" target="_blank">ACLU Tech & Analytics Blog</a>.
+        </li>
+    </ul>
+
+    <p>Talks:</p>
+    <ul>
+        <li>
+            <a href="https://www.youtube.com/watch?v=A-Gh88VBVk0" target="_blank">Behind the Scenes Briefing on ACLU's Redistricting Program</a>. October 2021.
+        </li>
+        <li>
+            <a href="https://datascience.charlotte.edu/sds-october-webinar-series" target="_blank">UNC Charlotte School of Data Science Invited Webinar</a>. October 2020.
+        </li>
+        <li>
+            <a href="https://yalephilanthropyconference.com/data-driven-impact" target="_blank">Yale Philanthropy Conference Panel on Data Driven Impact</a>.
+        </li>
+    </ul>
+
+    <p>Data Journalism & Advocacy</p>
+    <ul>
+        <li>
+            <a href="https://www.aclu.org/news/voting-rights/here-are-the-states-were-watching-as-redistricting-begins" target="_blank">Redistricting: States We're Watching</a>. December 2021.
+        </li>
+        <li>
+            <a href="https://www.aclu.org/news/womens-rights/family-surveillance-by-algorithm-the-rapidly-spreading-tools-few-have-heard-of" target="_blank">Family Surveillance by Algorithm</a>. September 2021.
+        </li>
+        <li>
+            <a href="https://www.aclu.org/news/criminal-law-reform/federal-militarization-of-law-enforcement-must-end" target="_blank">1033 Program Analysis</a>. May 2021.
+        </li>
+        <li>
+            <a href="https://www.aclu.org/news/disability-rights/how-nursing-homes-got-away-with-hiding-bodies-during-the-covid-19-outbreak/" target="_blank">How Nursing Homes Got Away With Hiding Bodies During the COVID-19 Outbreak</a>. July 2020.
+        </li>
+        <li>
+            <a href="https://www.aclu.org/news/smart-justice/decarceration-and-crime-during-covid-19/" target="_blank">Decarceration and Crime During COVID-19</a>. July 2020.
+        </li>
+        <li>
+            <a href="https://www.acludc.org/en/news/aclu-analysis-dc-stop-and-frisk-data-reveals-ineffective-policing-troubling-racial-disparities" target="_blank">Analysis of D.C. Stop-and-Frisk Data</a>. June 2020.
+        </li>
+        <li>
+            <a href="https://www.aclu.org/news/racial-justice/clearing-the-record-how-eviction-sealing-laws-can-advance-housing-access-for-women-of-color/" target="_blank">Clearing the Record: How Eviction Sealing Laws Can Advance Housing Access for Women of Color</a>. January 2020.
+        </li>
+        <li>
+            <a href="https://graphics.aclu.org/south_carolina/" target="_blank">Wealth-Based Driver's License Suspensions: Driven to Poverty</a>. November 2019.
+        </li>
+        <li>
+            <a href="https://www.aclu.org/blog/racial-justice/race-and-criminal-justice/oklahoma-victims-compensation-program?redirect=blog/racial-justice/race-and-criminal-justice/oklahoma-victims-fund" target="_blank">Oklahoma Victims Compensation Program Disproportionately Denies Funds for Black Victims</a>. July 2019.
+        </li>
+        <li>
+            <a href="https://www.acludc.org/en/racial-disparities-dc-policing-descriptive-evidence-2013-2017" target="_blank">Racial Disparities in D.C. Policing: Descriptive Evidence from 2013–2017</a>. May 2019,
+            Updated July 2019. 
+            <a href="https://www.acludc.org/en/racial-disparities-stops-metropolitan-police-department-2020-data-update" target="_blank">2020 Data Update</a>. March 2021.
+        </li>
+    </ul>
+
+      
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  
+</body>
+</html>

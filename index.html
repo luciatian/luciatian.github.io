@@ -1,151 +1,260 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.68.3" />
-  <meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Lucia Tian | Home </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
+ <style>
 
-<title>Lucia Tian</title>
-<meta name="author" content="Lucia Tian" />
-<meta name="description" content="Lucia Tian. Climate. Technology Commercialization. Data." />
-<meta name="robots" content="index, follow" />
-<meta name="referrer" content="always" />
-
-
-<meta property="og:title" content="Lucia Tian" />
-<meta property="og:description" content="Lucia Tian. Climate. Technology Commercialization. Data." />
-<meta property="og:url" content="https://luciatian.github.io/" />
-
-<meta property="og:image" content="https://luciatian.github.io/images/LTwebss.png" />
-<meta name="twitter:card" content="summary_large_image" />
-
-<meta name="twitter:site" content="@luciattian" />
-
-
-<link rel="icon" href="https://luciatian.github.io/favicon.ico" />
-
-
-<link rel="stylesheet" href="https://luciatian.github.io/assets/css/split.css" type="text/css" media="screen" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-
-
-
-  <style>
-  
-    .fs-split .split-image { background-image: url("https://luciatian.github.io/images/MA_9774_small.jpg"); background-position: center right; }
-  
-  </style>
-
-
-
-
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-162812219-1', 'auto');
-	
-	ga('send', 'pageview');
+html, body {
+  height: 100%; /* Ensure both the html and body elements fill the viewport height */
+  margin: 0; /* Remove default margins */
 }
-</script>
+
+body {
+  background-image: url('input/transmission_background.jpg'); /* Replace with the path to your image */
+  background-size: cover; /* Make the image cover the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed; /* Fix the background so it doesn't move when scrolling */
+
+  font-family: 'Urbanist', sans-serif; /* Set your preferred font */
+  color: #323839; /* Set the default text color */
+  line-height: 1.6; /* Improve readability with line spacing */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Urbanist', serif; /* Set a distinct font for headings */
+  margin-bottom: 10px; /* Add spacing below headings */
+}
+
+p {
+  font-size: 17px; /* Set a standard font size for paragraphs */
+  color: #444444; /* Slightly lighter text for readability */
+}
+
+a {
+  color: #007BFF; /* Set a distinct color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+a i {
+  margin-right: 3px; /* Add space between the icon and text */
+}
+
+a:hover {
+  color: #0056b3; /* Change link color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.navbar {
+  /*background-color: transparent; */
+  background-color: rgba(255, 255, 255, 0.7); /* White with 80% opacity */
+  position: sticky; /* Allow content to flow behind it */
+  z-index: 1; /* Keep the navbar above the image */
+  padding-left: 0px; /* Adjust spacing if necessary */
+}
+
+.navbar-nav .nav-link {
+  color: #323839; /* Ensure the text remains visible on a transparent background */
+  font-size: 17px; /* Set a standard font size for links */
+}
+
+.navbar-brand {
+  color: #323839; /* Ensure the brand text is visible */
+  font-size: 26pt;
+  position: relative; /* Ensure proper alignment */
+  left: 0; /* Keep aligned with the left side */
+  margin-left: 0; /* Adjust margin to maintain consistent spacing */
+  padding-left: 15px;
+}
+
+.navbar-toggler-icon {
+  background-color: #d2e9e1af; /* Set the desired color */
+  border-radius: 2px; /* Optional: Add rounding to the corners */
+}
 
 
+.navbar-toggler:hover svg rect {
+  fill: #323839; /* Change color on hover */
+}
 
+
+.profile-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange elements in a row */
+  align-items: center; /* Vertically align the image and text */
+  gap: 40px; /* Add space between the image and text */
+  width: 65vw; /* Full viewport width */
+  height: 60vh; /* Full viewport height */
+}
+
+
+.text-container {
+  flex: 1; /* Allow the text to take up the remaining space */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack text vertically */
+  justify-content: flex-start;
+  overflow-y: auto; /* Enable scrolling for the text */
+  max-height: 100vh; /* Limit the height to the viewport */
+  padding-right: 20px; /* Add some padding for spacing */
+}
+
+.text-background {
+  background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+  padding: 20px; /* Add padding inside the background */
+  border-radius: 8px; /* Optional: Add rounded corners for aesthetics */
+  width: 100%; /* Ensure the container spans the available space */
+  display: inline-block; /* Make the box shrink to fit its content */
+  max-width: 100%; /* Limit maximum width for better readability */
+  margin: 0 auto; /* Center the text container */
+}
+
+.profile-photo-container {
+  width: 250px; /* Adjust width as needed */
+  height: 250px; /* Half of the width for a perfect half-circle */
+  overflow: hidden; /* Ensures the image doesn't overflow the container */
+  position: relative;
+  /*background-color: white; /* Optional: Background color for the border area */
+  margin-left: 50px; /* Add padding on the left side of the image */
+  border: 10px solid #bfd9d2; /* Replace #34c759 with the exact green color from your background image */
+  border-radius: 50%; /* Ensure the border is circular */
+  flex-shrink: 0; /* Prevent shrinking in flex containers */
+}
+
+.profile-photo-image {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Maintain aspect ratio */
+}
+
+/* for small screens */
+@media (max-width: 1050px) {
+  .profile-container {
+    gap: 20px; /* Reduce the gap between elements */
+    width: 73vw; /* Full viewport width */
+    height:auto;
+    align-items: top; /* Vertically align the image and text */
+  }
+
+
+  .text-container {
+    max-height: calc(100vh - 250px); /* Adjust for image height */
+    padding: 0 20px; /* Add horizontal padding */
+  }
+ 
+}
+
+/* for really small screens */
+@media (max-width: 850px) {
+  .profile-container {
+    display: flex;
+    flex-direction: column; /* Stack the image and text vertically */
+    gap: 20px; /* Add spacing between the elements */
+    width: auto; /* Use full width */
+    height: 100vh; /* Take up the full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling for the block */
+    align-items: center; /* Center-align content */
+    justify-content: flex-start; /* Align content to the top */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .profile-photo-container {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Half of the width for a perfect half-circle */
+    margin-left: 0px;
+    margin-right: 0vw;
+  }
+  .text-container {
+    flex: none; /* Prevent stretching of child elements */
+    width:auto; /* Allow the text to size itself based on content */
+    max-height: none; /* Remove height restrictions */
+    overflow-y: visible; /* Ensure text remains fully visible */
+    font-size: 16px; /* Slightly smaller text for narrow viewports */
+  }
+
+  .text-background {
+    width: auto; /* Allow the box to size itself based on content */
+    max-width: 80%; /* Ensure it doesn't extend too far on smaller screens */
+    padding: 15px; /* Reduce padding for smaller screens */
+    display: inline-block; /* Shrink the box to fit its content */
+  }
+}
+
+</style>
 </head>
 
-<body id="fullsingle" class="page-template-page-fullsingle-split">
+<body>
+  <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Lucia Tian</a>
 
-  <div class="fs-split">
-
-    
-    
-
-      <div class="split-image">
-
-      </div>
-
-    
-    
-    
-    <div class="split-content">
-      <div class="split-content-vertically-center">
-        
-        <div class="split-intro">
-  <span class="tagline">Lucia Tian</span>
-  <h1>Climate | Tech Commercialization | Data</h1>
-
-</div>
-
-
-        
-        
-  
-  <div class="split-bio">
-  <p>I work on commercializing and scaling the technologies we need to solve our formidable climate challenges. I&rsquo;m also a data &amp; analytics nerd with &gt;10 years of experience working with data, understanding what it&rsquo;s telling us, and using that understanding to inform decisions. I&rsquo;ve built and led technical teams large and small, tackling challenges for government agencies, non-profits, and in the private sector.</p>
-
-</div>
-
-
-  
-  <div class="split-lists">
-
-  
-    
-
-    
-      <div class="split-list">
-        <h3></h3>
-        <ul>
-          
-            <li><a href="/bio">About Me</a></li>
-          
-            <li><a href="/news">News &amp; Links</a></li>
-          
-            <li><a href="https://www.linkedin.com/in/lucia-tian/">Let&#39;s Connect!</a></li>
-          
-        </ul>
-      </div>
-    
-
-    
-  
-
-</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <rect width="30" height="3" fill="#bfd9d2"></rect>
+        <rect y="12" width="30" height="3" fill="#bfd9d2"></rect>
+        <rect y="24" width="30" height="3" fill="#bfd9d2"></rect>
+      </svg>
+    </button>
 
 
 
-        
-        <div class="split-credit">
-  <p>&copy;2022 Lucia Tian </p>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="bio.html">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News & Links</a>
+                    </li>
 
-</div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- End of navigation bar -->
 
-      </div>
-    </div>
+<!-- Profile and Text Section -->
+<div class="profile-container">
+  <!-- Image Section -->
+  <div class="profile-photo-container">
+    <img src="input/profile_image.png" alt="Profile image" class="profile-photo-image">
+  </div>
+
+  <!-- Text Section -->
+
+  <div class="text-background">
+  <div class="text-container">
+    <p>
+      I work on commercializing and scaling the clean energy technologies we need to solve our formidable climate challenges.
+      I've built and led technical teams large and small, tackling quantitative, operations, commercial, and investment challenges
+      for government agencies, non-profits, and in the private sector.
+    </p>
+
+    <p>
+      <a href="https://www.linkedin.com/in/lucia-tian/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </p>
+
 
   </div>
+  </div>
+</div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
   
-  
-<script type="text/javascript">
-var sc_project=12232989;
-var sc_invisible=1;
-var sc_security="527f2d4e";
-var sc_https=1;
-var sc_remove_link=1;
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript><div class="statcounter"><img class="statcounter"
-src="https://c.statcounter.com/12232989/0/527f2d4e/1/" alt="Web Analytics Made
-Easy - StatCounter"></div></noscript>
-
-
-
 </body>
 </html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Lucia Tian | Bio </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+ <style>
+
+html, body {
+  height: 100%; /* Ensure both the html and body elements fill the viewport height */
+  margin: 0; /* Remove default margins */
+}
+
+body {
+  background-image: url('input/transmission_background.jpg'); /* Replace with the path to your image */
+  background-size: cover; /* Make the image cover the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed; /* Fix the background so it doesn't move when scrolling */
+
+  font-family: 'Urbanist', sans-serif; /* Set your preferred font */
+  color: #323839; /* Set the default text color */
+  line-height: 1.6; /* Improve readability with line spacing */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Urbanist', serif; /* Set a distinct font for headings */
+  margin-bottom: 10px; /* Add spacing below headings */
+}
+
+p {
+  font-size: 17px; /* Set a standard font size for paragraphs */
+  color: #444444; /* Slightly lighter text for readability */
+}
+
+a {
+  color: #007BFF; /* Set a distinct color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+a i {
+  margin-right: 3px; /* Add space between the icon and text */
+}
+
+a:hover {
+  color: #0056b3; /* Change link color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.navbar {
+  /*background-color: transparent; */
+  background-color: rgba(255, 255, 255, 0.7); /* White with 80% opacity */
+  position: sticky; /* Allow content to flow behind it */
+  z-index: 1; /* Keep the navbar above the image */
+  padding-left: 0px; /* Adjust spacing if necessary */
+}
+
+.navbar-nav .nav-link {
+  color: #323839; /* Ensure the text remains visible on a transparent background */
+  font-size: 17px; /* Set a standard font size for links */
+}
+
+.navbar-brand {
+  color: #323839; /* Ensure the brand text is visible */
+  font-size: 26pt;
+  position: relative; /* Ensure proper alignment */
+  left: 0; /* Keep aligned with the left side */
+  margin-left: 0px; /* Adjust margin to maintain consistent spacing */
+  padding-left: 15px;
+}
+
+.navbar-toggler-icon {
+  background-color: #d2e9e1af; /* Set the desired color */
+  border-radius: 2px; /* Optional: Add rounding to the corners */
+}
+
+
+.navbar-toggler:hover svg rect {
+  fill: #323839; /* Change color on hover */
+}
+
+
+.profile-container {
+    display: flex;
+    flex-direction: column; /* Stack the image and text vertically */
+    gap: 20px; /* Add spacing between the elements */
+    width: auto; /* Use full width */
+    height: 100vh; /* Take up the full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling for the block */
+    align-items: center; /* Center-align content */
+    justify-content: flex-start; /* Align content to the top */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  
+
+.text-container {
+    flex: none; /* Prevent stretching of child elements */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack text vertically */
+    justify-content: flex-start;
+    width:auto; /* Allow the text to size itself based on content */
+    max-height: none; /* Remove height restrictions */
+    overflow-y: auto; /* Enable scrolling for the text */
+    font-size: 16px; /* Slightly smaller text for narrow viewports */
+    padding-right: 20px; /* Add some padding for spacing */
+}
+
+
+.text-background {
+  background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+  padding: 20px; /* Add padding inside the background */
+  border-radius: 8px; /* Optional: Add rounded corners for aesthetics */
+  width: auto; /* Allow the box to size itself based on content */
+  display: inline-block; /* Make the box shrink to fit its content */
+  max-width: 80%; /* Limit maximum width for better readability */
+  margin: 0 auto; /* Center the text container */
+  padding: 15px; /* Reduce padding for smaller screens */
+}
+
+
+.profile-photo-container {
+  width: 250px; /* Adjust width as needed */
+  height: 250px; /* Half of the width for a perfect half-circle */
+  overflow: hidden; /* Ensures the image doesn't overflow the container */
+  position: relative;
+  /*background-color: white; /* Optional: Background color for the border area */
+  margin-left: 50px; /* Add padding on the left side of the image */
+  border: 10px solid #bfd9d2; /* Replace #34c759 with the exact green color from your background image */
+  border-radius: 50%; /* Ensure the border is circular */
+  flex-shrink: 0; /* Prevent shrinking in flex containers */
+}
+
+.profile-photo-image {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Maintain aspect ratio */
+}
+
+
+
+</style>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Lucia Tian</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <rect width="30" height="3" fill="#bfd9d2"></rect>
+        <rect y="12" width="30" height="3" fill="#bfd9d2"></rect>
+        <rect y="24" width="30" height="3" fill="#bfd9d2"></rect>
+      </svg>
+    </button>
+
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="bio.html">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News & Links</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- End of navigation bar -->
+
+<!-- Profile and Text Section -->
+<div class="profile-container">
+
+  <!-- Text Section -->
+
+  <div class="text-background">
+    <div class="text-container">
+      <h2 id="Bio">Bio</h2>
+      <p>
+        I currently lead Google’s team responsible for developing and scaling 
+        <a href="https://sustainability.google/reports/accelerating-advanced-clean-electricity-technologies/" target="_blank">advanced clean technologies</a>, through strategic investments, offtake, and partnerships, to achieve Google’s global 
+        <a href="https://sustainability.google/progress/energy/" target="_blank">24/7 carbon-free energy</a> and net zero goals. This includes technologies ranging from advanced nuclear, to next-gen geothermal, to long duration energy storage and more. You can read more about my team's work 
+        <a href="https://www.linkedin.com/pulse/harnessing-electricity-demand-commercialize-nextgen-clean-terrell-wb2nc" target="_blank">here</a>.
+      </p>
+    
+      <p>
+        Prior to Google, I served as Senior Advisor
+        to the U.S. Department of Energy’s Chief Commercialization Officer, and as Chief Strategist for the Loan Programs Office, driving the 
+        <a href="https://liftoff.energy.gov" target="_blank">Pathways to Commercial Liftoff</a>
+        effort to inform DOE’s billion-dollar Bipartisan Infrastructure Law and Inflation Reduction Act investments in clean energy and carbon technologies.
+      </p>
+    
+      <p>
+        Before jumping into the clean energy space, I was the Chief Analytics Officer
+        at the American Civil Liberties Union (ACLU), where I built a team of analysts, data scientists, and engineers that brought quantitative evidence to the courtroom, to our legislatures, and to the public through research on issues as diverse as voting rights, immigration, and criminal justice. 
+        We also helped improve the efficacy of the the ACLU's fundraising, member engagement, and voter outreach through testing and analysis. Sitting at the nexus of civil liberties and the use of data and technology, we informed the organization’s data and AI policies.
+      </p>
+
+      <p>
+        I've also worked in McKinsey’s Washington D.C. office, with public and private sector clients across defense, transportation, revenue, and infrastructure. I helped build McKinsey's public sector analytics practice, which brings modern data and analytics capabilities to government functions. In 2016, I served as the Deputy Director of Data Science for the Hillary for America campaign.
+      </p>
+
+      <p>
+        I'm a proud MIT Engineer, with a dual degree in Electrical Engineering/Computer Science and Economics, and hold an M.A. in Economics from Harvard.
+      </p>  
+    
+      <p>
+        Some of my favourite things include:
+        <ul>
+          <li>Hiking (up next - the Dolomites, and hoping to one day belong to 
+            <a href="http://www.amc4000footer.org/" target="_blank">this club</a>)</li>
+          <li>Ballet</li>
+          <li>A daily <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw" target="_blank">dose of math</a></li>
+        </ul>
+      </p>
+    
+      <p>
+        I'm the proud mama of two boys, Maxwell and Felix. Meet my better half (media naranja) 
+        <a href="https://www.eduardodavila.com/" target="_blank">here</a>.
+      </p>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+</body>
+</html>
