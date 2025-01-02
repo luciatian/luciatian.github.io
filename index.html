@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lucia Tian is a leader in commercializing and deploying clean energy technologies, to enable data & AI growth while tackling our global climate challenges."/>
   <title> Lucia Tian | Home </title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
@@ -15,6 +16,8 @@
 html, body {
   height: 100%; /* Ensure both the html and body elements fill the viewport height */
   margin: 0; /* Remove default margins */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange elements in a column layout */
 }
 
 body {
@@ -91,8 +94,9 @@ a:hover {
   flex-direction: row; /* Arrange elements in a row */
   align-items: center; /* Vertically align the image and text */
   gap: 40px; /* Add space between the image and text */
-  width: 65vw; /* Full viewport width */
-  height: 60vh; /* Full viewport height */
+  width: 65vw; /* Adjust viewport width */
+  flex-grow: 1; /* Push the footer to the bottom */
+  /* height: 60vh; /* Adjust viewport height */
 }
 
 
@@ -225,7 +229,7 @@ a:hover {
 <div class="profile-container">
   <!-- Image Section -->
   <div class="profile-photo-container">
-    <img src="input/profile_image.png" alt="Profile image" class="profile-photo-image">
+    <img src="input/lucia_tian_clean_energy.png" alt="Lucia Tian - Clean Energy Technologies, Google" class="profile-photo-image">
   </div>
 
   <!-- Text Section -->
@@ -233,9 +237,9 @@ a:hover {
   <div class="text-background">
   <div class="text-container">
     <p>
-      I work on commercializing and scaling the clean energy technologies we need to solve our formidable climate challenges.
+      I work on commercializing and scaling the clean energy technologies we need to meet our formidable climate challenges.
       I've built and led technical teams large and small, tackling quantitative, operations, commercial, and investment challenges
-      for government agencies, non-profits, and in the private sector.
+      across public, private, and non-profit sectors.
     </p>
 
     <p>
@@ -248,13 +252,13 @@ a:hover {
   </div>
 </div>
 
-
-
-
-
+<!-- Enables navbar collapse -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-
+<!-- Footer -->
+<footer style="background-color: rgba(255, 255, 255, 0.8); padding: 10px; text-align: center; font-size: 12px;">
+  © 2025 Lucia Tian. All Rights Reserved.
+</footer>
   
 </body>
 </html>
