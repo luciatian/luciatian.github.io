@@ -126,21 +126,24 @@ a:hover {
 }
 
 
-.profile-photo-container {
-  width: 250px; /* Adjust width as needed */
-  height: 250px; /* Half of the width for a perfect half-circle */
-  overflow: hidden; /* Ensures the image doesn't overflow the container */
-  position: relative;
-  /*background-color: white; /* Optional: Background color for the border area */
-  margin-left: 50px; /* Add padding on the left side of the image */
-  border: 10px solid #bfd9d2; /* Replace #34c759 with the exact green color from your background image */
-  border-radius: 50%; /* Ensure the border is circular */
-  flex-shrink: 0; /* Prevent shrinking in flex containers */
+.image-container {
+  text-align: center; /* Center the image horizontally */
+  margin: 20px 0; /* Add spacing above and below the image */
 }
 
-.profile-photo-image {
-  width: 100%; /* Make the image fill the container */
-  height: 100%; /* Maintain aspect ratio */
+.image-container img {
+  width: 75%; /* Scale the image width to 50% of the page */
+  max-width: 100%; /* Ensure the image does not exceed its original size */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners for aesthetics */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for a subtle effect */
+}
+
+.image-container figcaption {
+  font-size: 14px; /* Set the caption font size */
+  color: #666; /* Use a lighter color for the caption */
+  margin-top: 10px; /* Add spacing between the image and caption */
+  /* font-style: italic; /* Optional: Make the caption italic */
 }
 
 </style>
@@ -201,7 +204,33 @@ a:hover {
         <li> October 2024: Our team announced a ground-breaking partnership with 
             <a href="https://blog.google/outreach-initiatives/sustainability/google-kairos-power-nuclear-energy-agreement/" target="_blank">Kairos</a> to develop 500MW of advanced Small Modular Reactors.
         </li>
+        <li> October 2024:
+            <a href="https://event.technologyreview.com/emtech-mit-2024" target="_blank">MIT Tech Review EmTech conference</a> on Google's clean energy strategy to enable AI and data center growth.
+        </li>
     </ul>
+
+      <!-- Insert image -->
+  <div class="image-container">
+    <img src="input/lucia_tian_fireside_talk_AI_clean_energy_MIT_techreview_emtech.jpg" alt="Lucia Tian at speaking at MIT Technology Review's EmTech conference fireside chat on Google's clean energy work to enable AI and data center growth with Casey Crownhart.">">
+    <figcaption>EmTech Fireside Chat with Casey Crownhart</figcaption>
+  </div>
+
+  <ul>
+    <li> September 2025: New York Climate Week 
+      <a href="https://www.ctvc.co/a-line-of-sight-from-sightlive-2/" targets="_blank">Sightlive Panel</a> on deploying first-of-a-kind technologies, with a focus on geothermal power.
+      <a href="https://www.thirdway.org/events/powering-the-future-decarbonizing-our-economy-with-24-7-clean-energy" targets=""_blank">Third Way Panel</a> on powering the future with 24/7 carbon-free energy. NEI Nuclear Energy Assembly panel on partnerships to enable project launch.
+    </li>
+  </ul>
+
+  <h5> Coming Up </h5>
+  <ul>
+    <li> January 2025: 
+      <a href="https://www.nationalacademies.org/event/44002_01-2025_pathways-for-new-nuclear-development-a-workshop" targets="_blank">National Academy of Sciences Workshop</a> on Pathways for New Nuclear Development
+    </li>
+    <li> March 2025:
+      <a href="https://www.mitenergyconference.org/" targets="_blank"> MIT Energy Conference</a>
+    </li>
+  </ul>
 
     <!-- Separator -->
     <hr style="margin: 40px 0; border: 2px solid #bfd9d2;">
@@ -210,7 +239,8 @@ a:hover {
     <h2 id="Links">Links to Prior Work</h2>
     <div style="margin-bottom: 20x;"></div>
 
-    <h5>U.S. Department of Energy:</h5>
+    <h5>U.S. Department of Energy</h5>
+    <p>Reports</p>
     <ul>
         <li>
             <a href="https://liftoff.energy.gov" target="_blank">DOE's Pathways to Commercial Liftoff</a>, first published in March 2023, captured our commercial assessment for
@@ -259,9 +289,16 @@ a:hover {
             You can also learn more via public <a href="https://liftoff.energy.gov/webinars/" target="_blank">webinars</a>, and 
             <a href="https://www.ctvc.co/3-2-1-doe-we-have-liftoff/" target="_blank">Climate Tech VC's coverage</a>.
         </li>
+
+       <!-- Insert image -->
+  <div class="image-container">
+    <img src="input/lucia_tian_DOE_secretary_granholm_liftoff.jpeg" alt="Lucia Tian with Department of Energy Secretary Jennifer Granholm celerating Pathways to Commercial Liftoff reports on clean energy technologies.">">
+    <figcaption>Celebrating the Pathways to Commercial Liftoff with Secretary Granholm at CERAWeek 2024</figcaption>
+  </div>
+
         <li>
             <a href="https://www.energy.gov/technologytransitions/arl" target="_blank">DOE's Adoption Readiness Level Framework</a>, first published in February 2023 and used across DOE, National Labs, and industry, provides a systematic framework for assessing technology adoption risks in parallel with the familiar "TRL" scale. 
-            You can find the detailed assessment <a href="publications/ARL Assessment 10-10-24.pdf" target="_blank">here</a>.
+            You can find the assessment tool <a href="publications/ARL Assessment 10-10-24.pdf" target="_blank">here</a>.
         </li>
         <li>
             <a href="https://www.ctvc.co/founders-guide-to-the-doe/" target="_blank">Climate Tech VC: Founder's Guide to DOE</a> helps start-ups discover the many opportunities in a complex government agency. August 2022.
@@ -274,8 +311,36 @@ a:hover {
         </li>
     </ul>
 
+    <p>Talks</p>
+    <ul>
+      <li> 
+        <a href="https://ceraweek.com/program/achieving-liftoff-investing-with-doe-to-commercialize-clean-energy-technologies-19077-813291/" target="_blank">CERAWeek Panel</a>: Achieving Liftoff: Investing with DOE to Commercialize Clean Energy Technologies. March 2024.
+      </li>
+
+      <li> 
+        <a href="https://youtu.be/3i7qZfJ5G9Q?si=GNkaHwMAUT4gMB6V" target="_blank">Innovative Grid Deployment Liftoff Webinar</a>. December 2023.
+      </li>
+
+      <li>
+        <a href="https://www.energy.gov/lpo/articles/demonstrate-deploy-decarbonize-2023-wraps" target=""_blank">Deploy23</a> plenary on the 
+        <a href="https://www.youtube.com/watch?v=6HmTMCusYjk" target=""_blank">Pathway to Liftoff for Clean Hydrogen</a>. September 2023.
+      </li>
+      <li> 
+        <a href="https://bipartisanpolicy.org/event/hydrogen-technology-explained-scaling-the-next-generation/" target="_blank">Bipartisan Policy Center Talk</a>: Hydrogen Technology Explained & Scaling the Next Generation. September 2023.
+      </li>
+
+      <li> 
+        <a href="https://youtu.be/eEQh31j3FR8?si=I3zQfeu4PNFQROix" target="_blank">Industrial Decarbonization Liftoff Webinar</a>. June 2023.
+      </li>
+      <li> 
+        <a href="https://youtu.be/3i7qZfJ5G9Q?si=GNkaHwMAUT4gMB6V" target="_blank">Pathways to Commercial Liftoff Launch Webinar</a> and Clean Hydrogen deep dive. March 2023.
+      </li>
+      
+    </ul>
+  
+
     <h5>ACLU</h5>
-    <p>Reports:</p>
+    <p>Reports</p>
     <ul>
         <li>
             <a href="https://www.aclu.org/report/racial-justice-demands-every-vote-counted" target="_blank">Count Every Vote Report</a> emphasised (with quantitative evidence) the importance of waiting to count every vote in the 2020 U.S. presidential election. Also see 
@@ -295,7 +360,7 @@ a:hover {
         </li>
     </ul>
 
-    <p>Blogs:</p>
+    <p>Blogs</p>
     <ul>
         <li>
             Our <a href="https://nerds.aclu.org/" target="_blank">ACLU Tech & Analytics Blog</a> helped ACLU supporters better understand our work.
@@ -312,13 +377,13 @@ a:hover {
       </ul>
     </ul>
 
-    <p>Talks:</p>
+    <p>Talks</p>
     <ul>
         <li>
             <a href="https://www.youtube.com/watch?v=A-Gh88VBVk0" target="_blank">Behind the Scenes Briefing on ACLU's Redistricting Program</a>. October 2021.
         </li>
         <li>
-            <a href="https://datascience.charlotte.edu/sds-october-webinar-series" target="_blank">UNC Charlotte School of Data Science Invited Webinar</a>. October 2020.
+            <a href="https://wids.charlotte.edu/speakers/lucia-tian-keynote-speaker/" target="_blank">UNC Charlotte School of Data Science Invited Webinar</a>. October 2020.
         </li>
         <li>
             <a href="https://yalephilanthropyconference.com/data-driven-impact" target="_blank">Yale Philanthropy Conference Panel on Data Driven Impact</a>. February 2020.
